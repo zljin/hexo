@@ -30,7 +30,7 @@ git clone git@github.com:zljin/learnGit.git
 git pull origin master
 git add .
 git commit -m "commit" 
-git push origin master (默认提交master分支,其他分支请指定)
+git push origin master -f (默认提交master分支,其他分支请指定)
 
 3. 如果是本地仓库开始为和远程仓库进行连接
 # 进入本地仓库
