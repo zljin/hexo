@@ -7,6 +7,3 @@ public/
 .deploy*/
 yarn.lock
 package-lock.json
-!themes/hexo-theme-next-master/source
-!themes/hexo-theme-next-master/_config.yml
-themes/
