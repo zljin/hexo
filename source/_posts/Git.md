@@ -39,6 +39,7 @@ cd /Deskstop/vue-shop
 git init
 -- 添加新的远程仓库 <remoteName>+<url>
 git remote add origin git@gitee.com:zou0jin/vue-shop.git
+-- git remote remove origin
 --查看所有远程仓库
 -- git remote -v 
 ```
@@ -77,23 +78,19 @@ git checkout HEAD~4
 # 无视别人的提交，强制回滚
 git log -- 查看git所有的版本号
 git reset --hard 目标版本号
-git push -f -- 强推
+git push -f -- 强推（== 推不上去？有问题先强推 == ）
 
 # 不影响别人的提交，只回滚自己的提交
 #  三个版本,想重做第二个版本,但不想取消第三个版本,revert会取消第二个版本,然后在第三个版本的基础上,新建第四个版本
 git revert -n 反做版本号
 git revert -m 新版本名
 git push
-```
 
-### .gitignore
-> 提交时设置提交黑名单
-
-```
-# 更新后立即生效
+# 更新.gitignore 清缓存
 git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
+
 ```
 
 ### git生产使用规则(红线)

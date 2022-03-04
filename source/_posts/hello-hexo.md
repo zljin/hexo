@@ -65,4 +65,7 @@ hexo clean
 hexo g  -- generate 
 hexo s  -- start dev
 hexo d  -- deploy prod
+
+3. 中文锚点失效?
+https://blog.csdn.net/qq_42009500/article/details/116129303
 ```

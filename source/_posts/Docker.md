@@ -9,7 +9,7 @@ categories: 工具
 > docker可以快速搭建中间件环境,快速部署应用
 
 
-## 安装Docker
+## Install
 ```
 centos
 yum install -y docker # centos安装
@@ -22,7 +22,7 @@ vi /etc/docker/daemon.json
 
 docker version
 ```
-## 常用命令
+## Commands
 ### 容器的开启关闭
 ```
 service docker start //启动docker后台服务
@@ -97,7 +97,7 @@ docker run -di -v /usr/local/myhtml:/usr/local/myhtml --name=myUuntu3 ubuntu:15.
 --privileged=true来解决挂载的目录无权限问题
 ```
 
-## Docker安装软件
+## Docker install software
 ```
 # tomcat
 1. 拉取镜像
