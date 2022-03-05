@@ -16,13 +16,13 @@ https://jiasu8.pink/clientarea.php?action=productdetails&id=61848
 [DiskGenius](https://leonard.lanzoul.com/ieIVHi6eufi)
 [centos image](https://cloud.tencent.com/developer/article/1590077)
 [snipaste截图软件](https://leonard.lanzoul.com/i3DpQ0110wje)
+[idea2019破解](https://www.cnblogs.com/pzw23/p/12166586.html)
 
 工具：
 [编程环境安装指南](https://leonard.lanzoul.com/icuD1010c8zc)
 [在线工具](https://tool.lu/)
 [natapp内网穿透](https://natapp.cn/login)
 [在线md打印](http://coolaf.com/tool/md)
-[人人开源](https://gitee.com/renrenio)
 
 学习:
 [k8s](https://jimmysong.io/kubernetes-handbook/)
@@ -32,9 +32,8 @@ https://jiasu8.pink/clientarea.php?action=productdetails&id=61848
 [java面试宝典](https://thinkwon.blog.csdn.net/article/details/104397516)
 [纯洁的微笑](http://www.ityouknow.com/docker/2018/03/22/docker-compose.html)
 
-
-
-
+娱乐:
+[电影资源大全](https://leonard.lanzoul.com/i5R3r010c90d)
 ```
 
 

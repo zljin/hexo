@@ -8,6 +8,8 @@ categories: 工具
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 > hexo 基于node.js的一个快速搭建博客的框架,我们只需要选择喜欢的theme和编写markdown即可搭建,且不需要服务器,借助github的服务器即可搭建的框架。
+>
+> 结果展示：https://zljin.github.io/
 
 ## 使用步骤
 
