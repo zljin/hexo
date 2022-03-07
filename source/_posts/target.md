@@ -18,24 +18,18 @@ categories:
 ### 博文更新计划
 
 ```
-2. 框架底层原理
-spring
-springboot
-springcloud
-mybatis
-
 1. 基础知识
 JVM(线上故障处理oom)
-多线程
 sql调优(sql超时,线上问题处理top)
-计算机网络
-计算机组成原理
-3. 分布式问题
+多线程
+
+2. 分布式问题
 分布式会话,
 负载均衡,
-锁,
 分库分表,
 读写分离,
 分布式事务,
 消息队列
+
+-- springcloud 使用
 ```

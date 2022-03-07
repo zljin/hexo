@@ -84,6 +84,17 @@ for(int i=0;i<A.length;i++) {
    }
 }
 return resultSet;
+      
+3. count(1)、count(*)与count(列名)的区别
+执行效果上：
+count(*)包括了所有的列，相当于行数，sql会自动会优化指定到那一个字段
+count(1)包括了忽略所有列，用1代表代码行
+count(列名)只包括列名那一列，统计时，NULL不统计。
+
+执行效率上：
+列名为主键，count(列名)会比count(1)快
+列名不为主键，count(1)会比count(列名)快
+表多列并无主键，则 count（1）的执行效率优于 count（*）
 ```
 
 ## 附录
@@ -226,3 +237,39 @@ select t1.A,t1.B,t1.C,t2.D,t2.E from t1 left join t2 on t1.C=t2.C;
 	| 5 | 6 | 7 | NULL | NULL |
 	+---+---+---+------+------+
 ```
+
+
+## sql调优
+
+1. 常用命令
+
+```
+top mysqld
+show processlist 查看用户session情况,看是单个sql消耗资源过多,还是session连接变多导致的
+慢日志查询
+```
+
+2. explain
+
+![](https://note.youdao.com/yws/api/personal/file/WEB923fd38606b0009e6f29281672d2132f?method=download&shareKey=8317adf3d9622326ff0303287fdc7bfb)
+
+3. sql性能优化
+
+```
+a. 避免select * ,因为现代的数据库或者数据文件是以列的形式进行数据存储，每多个数据列，就会多扫描一些数据文件，
+减少IO和缓存占用比如阿里云按量付费查询，就有巨大的差距
+b. 添加分区，避免全局扫描
+c. 先子查询过滤后再进行关联
+d. where条件 中 转换函数用在静态数据上，主要是避免每一条数据做类型转换
+e. 多join,少用exists和in, 如果实在要用in查询,建一张临时表，先将list_id插入到临时表中，最好也建上索引，然后再关联查询即可
+f. 认识到什么是增量表和快照表
+g. 减少无用的排序
+h. 关联查询需要明细关联粒度，非必要不要使用笛卡尔积
+i. 查询时，where条件千万别漏
+j. 避免在客户端查看大量数据，应该将查询的大量数据存储在临时表和暂存文件中，主要可以减少带宽
+k. 从业务的理解去思考优化业务
+```
+
+4. 索引使用准则
+
+![](https://note.youdao.com/yws/api/personal/file/WEBf5d5ff545df9972d364ac5d4da8bc222?method=download&shareKey=1f372f9879111bc6d35e7f839664030b)
