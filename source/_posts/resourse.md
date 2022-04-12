@@ -1,8 +1,8 @@
 ---
 title: 资源收藏
 date: 2021-03-05 00:00:57
-tags: 分享
-categories: 
+tags: 资源分享
+categories: 资源分享
 ---
 
 ```
@@ -35,7 +35,6 @@ https://jiasu8.pink/clientarea.php?action=productdetails&id=61848
 娱乐:
 [电影资源大全](https://leonard.lanzoul.com/i5R3r010c90d)
 ```
-
 
 
 
